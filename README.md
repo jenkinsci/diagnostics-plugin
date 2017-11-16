@@ -127,7 +127,7 @@ To test in a local Jenkins instance
 
     mvn hpi:run
 
-[wiki]: http://wiki.jenkins-ci.org/display/JENKINS/Diagnostics+Plugin
+[wiki]: https://wiki.jenkins.io/display/JENKINS/Diagnostics+Plugin
 
 ## License
 [MIT License](http://opensource.org/licenses/MIT)

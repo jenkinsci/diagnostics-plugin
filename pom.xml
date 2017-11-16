@@ -41,7 +41,7 @@
   <description>
     Jenkins plugin which allow the execution of long running diagnostics to aid the identification and resolution of problems on a Jenkins installation. This plugin is maintained by CloudBees.
   </description>
-  <url></url>
+  <url>https://wiki.jenkins.io/display/JENKINS/Diagnostics+Plugin</url>
 
   <licenses>
     <license>
