@@ -51,6 +51,29 @@
     </license>
   </licenses>
 
+  <developers>
+    <developer>
+      <id>alecharp</id>
+      <name>Adrien Lecharpentier</name>
+    </developer>
+    <developer>
+      <id>aheritier</id>
+      <name>Arnaud Héritier</name>
+    </developer>
+    <developer>
+      <id>escoem</id>
+      <name>Emilio Escobar Reyero</name>
+    </developer>
+    <developer>
+      <id>alvarolobato</id>
+      <name>Albaro Lobato</name>
+    </developer>
+    <developer>
+      <id>kuisathaverat</id>
+      <name>Ivan Fernandez Calvo</name>
+    </developer>
+  </developers>
+
   <scm>
     <connection>scm:git:ssh://git@github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/jenkinsci/${project.artifactId}-plugin.git</developerConnection>
