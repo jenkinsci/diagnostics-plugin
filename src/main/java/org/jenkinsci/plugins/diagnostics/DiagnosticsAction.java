@@ -195,7 +195,7 @@ public class DiagnosticsAction implements RootAction {
 
     @Override
     public String getIconFileName() {
-        return "/plugin/diagnostic/images/24x24/diagnostics.png";
+        return "/plugin/diagnostics/images/24x24/diagnostics.png";
     }
 
     @Override
