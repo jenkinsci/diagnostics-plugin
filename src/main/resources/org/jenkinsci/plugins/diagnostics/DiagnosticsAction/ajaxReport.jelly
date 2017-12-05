@@ -50,7 +50,7 @@
               <j:forEach var="session" items="${it.sessions}">
                  <tr>
                  <j:set var="image" value="${session.status.toString().toLowerCase()}.${session.status.toString()=='RUNNING'?'gif':'png'}"/>
-                   <td><a href="${rootURL}/diagnostics?sessionId=${session.id}" title="${session.status}" class="name icon"><img src="${rootURL}/plugin/diagnostic/images/32x32/${image}" class="icon32x32" /></a></td>
+                   <td><a href="${rootURL}/diagnostics?sessionId=${session.id}" title="${session.status}" class="name icon"><img src="${rootURL}/plugin/diagnostics/images/32x32/${image}" class="icon32x32" /></a></td>
                    <td>${session.description}</td>
                    <td>${session.startDate}</td>
                    <td>${session.endDate}</td>
@@ -62,7 +62,7 @@
                                title="${%Info}"
                                alt="${%Info}"
                                tooltip="${%Info}"
-                               src="${rootURL}/plugin/diagnostic/images/32x32/info.png"/>
+                               src="${rootURL}/plugin/diagnostics/images/32x32/info.png"/>
                     </a>
                     <j:choose>
                       <j:when test="${session.running}">
@@ -72,7 +72,7 @@
                                  alt="${%Cancel}"
                                  tooltip="${%Cancel}"
                                  onclick="return cancelSession(this)"
-                                 src="${rootURL}/plugin/diagnostic/images/32x32/stop.png"/>
+                                 src="${rootURL}/plugin/diagnostics/images/32x32/stop.png"/>
                         </a>
                       </j:when>
                       <j:otherwise>
@@ -81,7 +81,7 @@
                                  title="${%Delete}"
                                  alt="${%Delete}"
                                  tooltip="${%Delete}"
-                                 src="${rootURL}/plugin/diagnostic/images/32x32/delete.png"/>
+                                 src="${rootURL}/plugin/diagnostics/images/32x32/delete.png"/>
                         </a>
                         <j:if test="${session.downloadReady}">
                         <a name="download-${session.id}" href="${rootURL}/diagnostics/download?sessionId=${session.id}">
@@ -89,7 +89,7 @@
                                    title="${%Download Diagnostics}"
                                    alt="${%Download Diagnostics}"
                                    tooltip="${%Download Diagnostics}"
-                                   src="${rootURL}/plugin/diagnostic/images/32x32/download.png"/>
+                                   src="${rootURL}/plugin/diagnostics/images/32x32/download.png"/>
                           </a>
                         </j:if>
                       </j:otherwise>
@@ -124,7 +124,7 @@
                                  title="${%Status}"
                                  alt="${%Status}"
                                  tooltip="${%Status}"
-                                 src="${rootURL}/plugin/diagnostic/images/32x32/${icon}"
+                                 src="${rootURL}/plugin/diagnostics/images/32x32/${icon}"
                                  class="icon-lg"
                                  /><span class="diag-property">${diagnostic.descriptor.displayName}:</span>
                                  

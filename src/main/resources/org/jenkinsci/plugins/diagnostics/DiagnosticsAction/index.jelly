@@ -23,7 +23,7 @@ THE SOFTWARE.
   <l:layout title="${it.actionTitleText}" norefresh="true" permission="${app.ADMINISTER}">
     <st:include it="${app}" page="sidepanel"/>
     <l:main-panel>
-      <link rel="stylesheet" href="${rootURL}/plugin/diagnostic/css/main.css" type="text/css" />
+      <link rel="stylesheet" href="${rootURL}/plugin/diagnostics/css/main.css" type="text/css" />
       <div class="diagnostic">
         <h1 class="icon-decorated">${it.displayName}</h1>
         <div class="detail" role="alert">${it.actionBlurb}</div>
@@ -31,7 +31,7 @@ THE SOFTWARE.
           <f:form name="diagnostic-contents" method="POST" action="configure">
             <j:set var="instance" value="${it}"/>
             <f:section title="${%sessionConfiguration}">
-              <f:entry title="${%Description}" field="description" help="/plugin/diagnostic/help/help-description.html">
+              <f:entry title="${%Description}" field="description" help="/plugin/diagnostics/help/help-description.html">
                   <f:textbox/>
               </f:entry>
             </f:section>            

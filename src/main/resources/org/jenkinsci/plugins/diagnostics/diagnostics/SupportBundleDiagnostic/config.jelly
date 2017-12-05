@@ -30,7 +30,7 @@ THE SOFTWARE.
     <f:entry title="${%Period}" field="period">
         <f:number clazz="required positive-number" min="50" default="${descriptor.period}"/>
     </f:entry>
-    <f:dropdownList name="supportBundleConfig" title="Support Bundle Config" help="/plugin/diagnostic/help/help-supportBundleConfig.html">
+    <f:dropdownList name="supportBundleConfig" title="Support Bundle Config" help="/plugin/diagnostics/help/help-supportBundleConfig.html">
         <j:forEach var="item" items="${descriptor.supportBundleDescriptor}">
             <j:set var="selected" value="${item.displayName==instance.supportBundleConfig.descriptor.displayName}"/>
             <f:dropdownListBlock title="${item.displayName}" value="${loop.index}"
